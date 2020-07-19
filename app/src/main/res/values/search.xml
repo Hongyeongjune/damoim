@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_array">
+        <item>아이디 찾기</item>
+        <item>비밀번호 찾기</item>
+    </string-array>
+</resources>

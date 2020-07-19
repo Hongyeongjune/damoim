@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemReceptionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!-- 사진 -->
+        <ImageView
+            android:id="@+id/iv_trade_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.3"
+            android:gravity="center|right"
+            android:textColor="#000000"
+            android:background="@drawable/people"/>
+
+        <!--공백-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.025" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.675"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <!-- 제목 -->
+            <TextView
+                android:id="@+id/tv_trade_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.375"
+                android:gravity="center"
+                android:text="제목"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <!--공백-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.025" />
+
+            <!--게시판 저자-->
+            <TextView
+                android:id="@+id/tv_trade_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:text="가격"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            <!--공백-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.025" />
+
+            <!-- 올린 날짜 -->
+            <TextView
+                android:id="@+id/tv_trade_date"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:text="날짜"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

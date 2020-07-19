@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yeongjae.damoim">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.search.KeywordSearchActivity"></activity>
+        <activity
+            android:name=".view.tradecreate.TradeCreateActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".view.boardcreate.BoardCreateActivity"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBGAHUq-4yoafxBWlvT4ibSDme-R2mlN-I" />
+
+        <activity
+            android:name=".view.menu.MenuActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.main.DamoimActivity"
+            android:label="@string/title_activity_damoim"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".view.verificationcode.VerificationCodeActivity" />
+        <activity android:name=".view.searchinformation.SearchInformationActivity" />
+        <activity android:name=".view.searchinformation.password.SearchPasswordActivity" />
+        <activity android:name=".view.searchinformation.email.SearchEmailActivity" />
+        <activity android:name=".view.signup.sex.SignUpSexActivity" />
+        <activity android:name=".view.signup.qauth.SignUpQauthActivity" />
+        <activity android:name=".view.signup.phone.SignUpPhoneActivity" />
+        <activity android:name=".view.signup.password.SignUpPassWordActivity" />
+        <activity android:name=".view.signup.nickname.SignUpNickNameActivity" />
+        <activity android:name=".view.signup.email.SignUpEmailActivity" />
+        <activity android:name=".view.signup.age.SignUpAgeActivity" />
+        <activity android:name=".view.signup.address.SignUpAddressActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".view.intro.IntroActivity" />
+        <activity android:name=".view.signin.SignInActivity" />
+        <activity android:name=".view.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".lib.fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="firebase_messaging_auto_init_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="firebase_analytics_collection_enabled"
+            android:value="false" />
+    </application>
+
+</manifest>

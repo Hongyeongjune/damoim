@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="280dp"
+    android:layout_height="300dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="#66FFCC" />
+
+    <EditText
+        android:id="@+id/et_board_create_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:hint="게시글 제목"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/et_board_create_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:hint="게시글내용"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:id="@+id/ll_board_create_camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="이미지 선택"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_shape_camera"
+            android:text="카메라 촬영"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_shape_camera"
+            android:text="앨범선택"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_board_create"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:background="#66FFCC"
+        android:gravity="center"
+        android:text="게시글 생성"
+        android:textColor="#777777" />
+
+</LinearLayout>

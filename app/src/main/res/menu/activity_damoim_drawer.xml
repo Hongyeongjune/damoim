@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="내 정보" />
+        <item
+            android:id="@+id/nav_town"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="우리 동네 소식" />
+        <item
+            android:id="@+id/nav_board"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="자유게시판" />
+        <item
+            android:id="@+id/nav_trade"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="중고 장터" />
+        <item
+            android:id="@+id/nav_people"
+            android:icon="@drawable/ic_menu_share"
+            android:title="번개 모임" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="로그아웃" />
+        </menu>
+    </item>
+
+</menu>

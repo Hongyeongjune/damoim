@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "306732361156",
+    "firebase_url": "https://damoim-7ecc9.firebaseio.com",
+    "project_id": "damoim-7ecc9",
+    "storage_bucket": "damoim-7ecc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306732361156:android:3203a2da127eb19924f091",
+        "android_client_info": {
+          "package_name": "com.yeongjae.damoim"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306732361156-48cqbph4sorccqgdghpd8d8t9d7l86fd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yeongjae.damoim",
+            "certificate_hash": "44f834fcec8dd8c9a089179738f2551a7dfac9e0"
+          }
+        },
+        {
+          "client_id": "306732361156-uqcs1krmo3oiijtqne9r1toehqn2umts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpypR6aIE8qfUCBrfBoWPrOvQT9tNn2Ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306732361156-uqcs1krmo3oiijtqne9r1toehqn2umts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

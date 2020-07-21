@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.search.KeywordSearchActivity"></activity>
+        <activity android:name=".view.addressverification.AddressVerificationActivity"></activity>
+        <activity android:name=".view.search.KeywordSearchActivity" />
         <activity
             android:name=".view.tradecreate.TradeCreateActivity"
             android:theme="@android:style/Theme.Dialog" />
